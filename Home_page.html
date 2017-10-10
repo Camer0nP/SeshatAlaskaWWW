@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/css/home_style.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Welcome to HazMap</h1>
+    <nav>
+      <div href="#" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="clearfix menu">
+        <li><a href="#modal-1" data-toggle="modal">Log In</a></li>
+        <li><a href="#modal-2" data-toggle="modal">Register</a></li>
+        <li><a href="#modal-3" data-toggle="modal">Admin Log In</a></li>
+        <li><a href="#0" onclick="window.location.href='View.html'">View Hazards</a></li>
+        <li><a href="#0" onclick="window.location.href='20170919130034.html'">3D Model</a></li>
+    </nav>
+  </header>
+
+    <div class="container">
+      <div class="modal fade" id="modal-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content" style="font-size:13px";>
+            <form class="form-horizontal">
+              <div class="modal-header modal-lg">
+                    <h3>Log in</h3>
+              </div>
+              <input href="#modal-2"type="button" class="button_4" data-toggle="modal" data-dismiss="modal"value="Register"></input>
+              <input type="button" class="button_3" value=&times data-dismiss="modal"></input>
+
+              <fieldset>
+                <p>
+                  <label  class="loginlabel" for="hazard-type"> Username:</label>
+                    <Input type="text" id=username name="username" placeholder="Please enter your username" style="width:180px; height:30px">
+                </p>
+                  <p>
+                      <label class="loginlabel" for="hazard-long">Password:</label>
+                      <input type="password" id="password" name="password" value = "" placeholder="Enter your password" style="width:180px; ; height:30px";>
+                  </p>
+
+
+              </fieldset>
+               <input type="button" class="button_2" value="Log In" onclick="window.location.href='Home.html'"></input>
+               <input type="button" class="button_3" value=&times data-dismiss="modal"></input>
+
+             </div>
+          </div>
+        </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="modal fade" id="modal-2" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content" style="font-size:13px";>
+          <form class="form-horizontal">
+            <div class="modal-header modal-lg">
+              <h3>Register new user</h3>
+
+               <input href="#modal-1"type="button" class="button_4" data-toggle="modal" data-dismiss="modal" value="Log In"></input>
+               <input type="button" class="button_3" value=&times data-dismiss="modal"></input>
+
+
+            </div>
+            <fieldset>
+
+              <p>
+                <label class="loginlabel" for="hazard-type"> Username:</label>
+                <Input type="text" id=username name="username" placeholder="Please enter your username" style="width:180px; height:30px">
+              </p>
+                <p>
+                    <label class="loginlabel" for="hazard-long">Password:</label>
+                    <input type="password" id="password" name="password" value = "" placeholder="Enter your password"  style="width:180px; ; height:30px";
+                </p>
+                <p>
+                    <label class="loginlabel" for="hazard-long" style="width:40px";>Confirm Password:</label>
+                    <input type="text" id="Cpassword" name="password" value = "" placeholder="Confirm your password"   style="width:180px; ; height:30px";>
+                </p>
+            </fieldset>
+
+
+             <input type="button" class="button_2" value="Register" onclick="window.location.href='Home.html'"></input>
+             <input type="button" class="button_3" value=&times data-dismiss="modal"></input>
+
+
+           </div>
+        </div>
+      </div>
+  </form>
+</div>
+
+<div class="container">
+  <div class="modal fade" id="modal-3" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="font-size:13px";>
+        <form class="form-horizontal">
+          <div class="modal-header modal-lg">
+            <h3>Administrator Log in</h3>
+          </div>
+          <fieldset>
+            <p>
+              <label class="loginlabel" for="hazard-type"> Username:</label>
+                <Input type="text" id=username name="username" placeholder="Please enter your username" style="width:180px; height:30px">
+            </p>
+              <p>
+                  <label class="loginlabel" for="hazard-long">Password:</label>
+                  <input type="password" id="password" name="password" value = "" placeholder="Enter your password" style="width:180px; ; height:30px";>
+              </p>
+
+          </fieldset>
+
+           <input href="admin.html" type="button" class="button_2" value="Log In" onclick="window.location.href='admin.html'"></input>
+           <input type="button" class="button_3" value=&times data-dismiss="modal"></input>
+         </div>
+      </div>
+    </div>
+</form>
+</div>
+
+    <br>
+    <br>
+
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

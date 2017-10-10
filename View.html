@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hazards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/css/home_style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/leaflet2.css" />
+  <link rel="stylesheet" href="css/webmap2.css" />
+
+
+</head>
+<body>
+  <header>
+    <h1>Hazards</h1>
+    <nav>
+      <div href="#" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="clearfix menu">
+        <li><a href="#0" onclick="window.location.href='Home_page.html'">Home</a></li>
+        <li><a href="#0" onclick="window.location.href='Home.html'">Back</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+      <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      <div></div>
+      <br>
+    <div id="mapid"></div>
+
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/webmap.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+  </body>
+  </html>
